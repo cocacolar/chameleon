@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC ""><html lang="ko" ><head><meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<link rel="shortcut icon"  href="http://nagosoft.com/img/ico/64.ico">
+<link rel="stylesheet" href="http://nagosoft.com/css/common/common.css" media="print">
+<style>
+/** �덉씠�꾩썐 愿��� */
+@CHARSET "UTF-8";
+
+#wrap{background-color:#353132;}
+@media all and (min-width:1px) and (max-width:1218px){
+#container{width:1200px;margin:0 auto;z-index:100;}
+}
+@media all and (min-width:1219px) and (max-width:1366px){
+#container{width:1366px;margin:0 auto;z-index:100;}	
+}
+@media all and (min-width:1367px){
+#container{width:1500px;margin:0 auto;z-index:100;}
+}
+
+#skipNavi li{width:120px;height:30px;position:fixed;top:-30px;left:0;}
+#skipNavi li a{display:block;}
+
+#container{background-color:#89173a;}
+
+#container #header_wrap{height:750px;z-index:10;}
+#container #header_wrap #header{width:900px;margin:0 auto;}
+#container #header_wrap #header .top{padding-top:30px;height:200px;}
+#container #header_wrap #header .top .ci{float:left;}
+#container #header_wrap #header .top #gnb{float:right;margin-top:24px;}
+#container #header_wrap #header .top #gnb li{float:left;width:130px;background:url('http://nagosoft.com/img/common/img_bar01.png') no-repeat right 2px;}
+#container #header_wrap #header .top #gnb li.last{background:none;}
+#container #header_wrap #header .top #gnb li a{color:#fff;width:130px;text-align:center;display:block;font-size:16px;font-weight:bold;}
+#container #header_wrap #header .top #gnb li a:hover{background:url('http://nagosoft.com/img/common/bg_gnb.png') no-repeat 0 0;}
+#container #header_wrap #header .top #gnb li .gnb_sub{margin-top:25px;/* display:inline-block; */display:none;}
+#container #header_wrap #header .top #gnb li .gnb_sub li{background:none;margin-bottom:10px;}
+#container #header_wrap #header .top #gnb li .gnb_sub li a{height:26px;line-height:26px;font-weight:normal;font-size:14px;}
+#container #header_wrap #header .middle{margin-top:58px;color:#fff;height:280px;}
+#container #header_wrap #header .middle .left{width:420px;float:left;}
+#container #header_wrap #header .middle .company_full{font-size:24px;font-weight:bold;margin:29px 0 34px 0;}
+#container #header_wrap #header .middle .left .icons img{margin-right:10px;float:left;}
+#container #header_wrap #header .middle .right{width:430px;float:right;margin-top:49px;}
+#container #header_wrap #header .middle .right .company_explain{line-height:23px;margin-bottom:33px;}
+
+#wrap{background-color:#353132;}
+@media all and (min-width:1px) and (max-width:1218px){
+#container #content{width:1200px;}
+}
+@media all and (min-width:1219px) and (max-width:1366px){
+#container #content{width:1366px;}
+}
+@media all and (min-width:1367px){
+#container #content{width:1500px;}
+}
+
+#container #content{margin:0 auto;position:relative;/* display:inline-block; */}
+
+#container #footer{height:90px;padding-top:20px;clear:both;}
+#container #footer .footer_info{text-align:center;color:#fff;line-height:14px;margin-bottom:10px;}
+#container #footer .footer_info img{vertical-align:middle;margin-left:5px;}
+
+/* header bg image */
+.bg_header_main{background:url('http://nagosoft.com/img/common/bg_header_main.jpg') no-repeat center 0;}
+.bg_header_sub01{background:url('http://nagosoft.com/img/common/bg_header_sub01.jpg') no-repeat center 0;}
+.bg_header_sub02{background:url('http://nagosoft.com/img/common/bg_header_sub02.jpg') no-repeat center 0;}
+.bg_header_sub03{background:url('http://nagosoft.com/img/common/bg_header_sub03.jpg') no-repeat center 0;}
+.bg_header_sub04{background:url('http://nagosoft.com/img/common/bg_header_sub04.jpg') no-repeat center 0;}
+.bg_header_sub05{background:url('http://nagosoft.com/img/common/bg_header_sub05.jpg') no-repeat center 0;}
+.bg_header_subEtc{background:url('http://nagosoft.com/img/common/bg_header_subEtc.jpg') no-repeat center 0;}
+
+/** navi */
+#navi_wrap{position:absolute;width:125px;top:100px;left:150px;display:none;}
+
+@media all and (min-width:1px) and (max-width:1218px){
+#navi_wrap{left:0px;}
+}
+@media all and (min-width:1219px) and (max-width:1366px){
+#navi_wrap{left:80px;}	
+}
+@media all and (min-width:1367px){
+#navi_wrap{left:150px;}
+}
+
+#navi_wrap .navi{}
+#navi_wrap .navi li{height:28px;margin-bottom:10px}
+#navi_wrap .navi .navi_icon{float:right;margin-top:6px;}
+#navi_wrap .navi .navi_title{background:url('http://nagosoft.com/img/common/bg_navi_title01.png') no-repeat 0 0;float:left;width:95px;height:28px;margin-right:8px;padding:5px 0 0 6px;font-size:12px;line-height:15px;display:none;}
+#navi_wrap .navi .navi_btn{float:right;}
+
+/** common layout box */
+.box01{height:776px;border-top:2px solid #fff;background-color:#fff;}
+.box02{height:776px;border-top:2px solid #fff;background-color:#f0f0f0;}
+.box03{background-color:#fff;padding-bottom:100px;min-height:1000px;}
+.box03 .comingsoon{margin:0 auto;display:block;padding:190px 0 210px 0;}
+.box03 .error{margin:0 auto;display:block;padding:400px 0 210px 0;}
+.line{background:url('http://nagosoft.com/img/common/bg_bar01.jpg') repeat-x 0 270px;background-color:#fff;}
+.error_line{background:url('http://nagosoft.com/img/common/bg_bar01.jpg') repeat-x 0 500px;background-color:#fff;}
+.box04{height:776px;border-top:2px solid #8a193c;background-color:#8a193c;}
+.box{width:900px;margin:0 auto;/* line-height:0; */}
+.bd_bottom{border-bottom:2px solid #fff;}
+
+.sub_title{margin:70px 0 30px 0;}
+.sub01_title{margin:100px 0 42px 0;}
+.sub02_title01{margin:67px 0 52px 0;height:64px;width:634px;border-bottom:1px solid #cdcdcd;}
+.sub02_title02{margin:62px 0 42px 0;}
+.sub02_title03{margin:61px 0 51px 0;height:70px;width:900px;border-bottom:1px solid #cdcdcd;}
+.sub02_title04{margin:62px 0 50px 0;}
+.sub02_title05{margin:60px 0 52px 0;height:71px;width:900px;border-bottom:1px solid #cdcdcd;}
+.sub02_title06{margin:62px 0 51px 0;}
+.sub02_title07{margin:59px 0 51px 0;height:72px;width:900px;border-bottom:1px solid #cdcdcd;}
+.sub03_title01{margin:70px 0 50px 0;height:62px;width:532px;border-bottom:1px solid #cdcdcd;}
+.sub03_title02{margin:60px 0;}
+.sub04_title01{margin:70px 0 50px 0;height:62px;width:440px;border-bottom:1px solid #cdcdcd;}
+.sub04_title02{margin:60px 0;}
+.subEtc_title{margin:100px 0 40px 0;}
+
+/** admin */
+#adm_wrap{}
+#adm_wrap #adm_header{height:50px;background-color:#ccc;}
+#adm_wrap #adm_header .ci{margin:7px 0 0 11px;float:left;}
+#adm_wrap #adm_header .logout_btn{margin:15px 0 0 30px;float:left;}
+#adm_wrap #adm_container #adm_left{background-color:#f8f8f8;width:140px;float:left;}
+#adm_wrap #adm_container #adm_left .title{background-color:#3a3d47;height:75px;line-height:75px;color:#fff;font-weight:bold;padding-left:20px;}
+#adm_wrap #adm_container #adm_left .menu_list{margin:13px 0 100px 10px;width:130px;}
+#adm_wrap #adm_container #adm_left .menu_list li{margin-bottom:5px;height:25px;}
+#adm_wrap #adm_container #adm_left .menu_list li a{display:inline-block;width:130px;height:25px;line-height:25px;}
+#adm_wrap #adm_container #adm_left .menu_list li a.on, #adm_wrap #adm_container #adm_left .menu_list li a:hover{background-color:#891739;color:#fff;font-weight:bold;}
+#adm_wrap #adm_container #adm_content{float:left;margin-left:30px;display:inline;}
+#adm_wrap #adm_footer{height:50px;background-color:#ccc;clear:both;}
+#adm_wrap #adm_footer p{text-align:center;padding:20px 0 0 10px;}
+
+/** etc - color, align, margin, padding, input .. */
+.input218{width:206px;height:20px;line-height:20px;padding:0 5px;border:1px solid #ddd;font-family:NanumGothic;}
+.input160{width:148px;height:28px;line-height:28px;padding:0 5px;border:1px solid #dfdfdf;font-family:NanumGothic;}
+.input200{width:188px;height:28px;line-height:28px;padding:0 5px;border:1px solid #dfdfdf;font-family:NanumGothic;}
+.input213{width:189px;height:28px;line-height:21px;padding:0 12px;border:1px solid #dfdfdf;font-family:NanumGothic;}
+.input438{width:414px;height:28px;line-height:21px;padding:0 12px;border:1px solid #dfdfdf;font-family:NanumGothic;}
+.input450{width:438px;height:28px;line-height:28px;padding:0 5px;border:1px solid #dfdfdf;font-family:NanumGothic;}
+
+.textarea438{width:414px;height:201px;line-height:21px;padding:5px 12px 0 12px;overflow-y:auto;border:1px solid #dfdfdf;}
+
+.validate_msg30{color:#d73c1e;font-weight:bold;padding-left:10px;float:left;line-height:30px;}
+
+div.border_eb9d8e, input.border_eb9d8e{border:1px solid #eb9d8e;}
+.border_top_dfdfdf{border-top:1px solid #dfdfdf;}
+
+.c7b{color:#7b7b7b;}
+.cf9{color:#f9f9f9;}
+.bgf8{background-color:#f8f8f8;}
+
+.align_center{text-align:center;}
+
+.float_left{float:left;}
+
+.mtm15{margin-top:-15px !important;}
+.mtm80{margin-top:-81px !important;}
+.mtm188{margin-top:-188px !important;}
+.mt4{margin-top:4px;}
+.mt7{margin-top:7px;}
+.mt10{margin-top:10px;}
+.mt12{margin-top:12px;}
+.mt13{margin-top:13px;}
+.mt14{margin-top:14px;}
+.mt16{margin-top:16px;}
+.mt20{margin-top:20px;}
+.mt45{margin-top:45px;}
+.mt62{margin-top:62px;}
+.mt345{margin-top:345px;}
+.ml6{margin-left:6px;}
+.ml10{margin-left:10px;}
+.ml16{margin-left:16px;}
+.ml20{margin-left:20px;}
+.ml33{margin-left:33px;}
+.ml45{margin-left:45px;}
+.ml50{margin-left:50px;}
+.ml68{margin-left:68px;}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl19{padding-left:19px;}
+.pl21{padding-left:21px;}
+.pl24{padding-left:24px;}
+.pl30{padding-left:30px;}
+.pl43{padding-left:43px;}
+.pl50{padding-left:50px;}
+.pb10{padding-bottom:10px;}
+
+.mr10{margin-right:10px;}
+.mr11{margin-right:11px;}
+.mr20{margin-right:20px;}
+.mr21{margin-right:21px;}
+.mr33{margin-right:33px;}
+.mr45{margin-right:45px;}
+
+.mb13{margin-bottom:13px;}
+.mb23{margin-bottom:23px;}
+.mb30{margin-bottom:30px;}
+.mb34{margin-bottom:34px;}
+.mb35{margin-bottom:35px;}
+.mb40{margin-bottom:40px;}
+.mb42{margin-bottom:42px;}
+.mb50{margin-bottom:50px;}
+.mb70{margin-bottom:70px;}
+
+.pt10{padding-top:10px;}
+.pt14{padding-top:14px;}
+.pt22{padding-top:22px;}
+.pt30{padding-top:30px;}
+
+.height4{height:4px;}
+.height40{height:40px;}
+.height60{height:60px;}
+.height81{height:81px !important;}
+.height188{height:188px !important;}
+.height1258{height:1258px;}
+.height1375{height:1375px;}
+
+.width120{width:120px !important;}
+.width179{width:179px;}
+.width230{width:230px}
+.width365{width:365px;}
+.width600{width:600px;}
+.width900{width:900px;}
+
+.fs12{font-size:12px;}
+.fs14{font-size:14px;}
+
+.displayib{display:inline-block;}
+
+.vam{vertical-align:middle;}
+</style>
+<style>
+/** 珥덇린��, �덉씠�꾩썐 洹� �� �섎㉧吏� */
+@CHARSET "UTF-8";
+
+/** main */
+@media all and (min-width:1px) and (max-width:1218px){
+.point_wrap{margin-left:150px;float:left;width:70px;position:relative;}
+}
+@media all and (min-width:1219px) and (max-width:1366px){
+.point_wrap{margin-left:240px;float:left;width:70px;position:relative;}	
+}
+@media all and (min-width:1367px){
+.point_wrap{margin-left:300px;float:left;width:70px;position:relative;}
+}
+.point_wrap img{position:absolute;width:0;}
+.point_wrap .point1{top:120px;}
+.point_wrap .point2{top:320px;}
+.point_wrap .point3{top:515px;}
+.point_wrap .point4{top:640px;}
+.main_explain{margin:94px 0 0 43px;color:#fff;width:787px;display:inline-block;float:left;overflow:hidden;}
+.main_explain dt{font-size:50px;margin-bottom:15px;}
+.main_explain dt a{color:#fff;}
+.main_explain dt a:hover{color:#fff;}
+.main_explain dd{font-size:15px;line-height:24px;margin-bottom:75px;}
+
+/** headerTitle*/
+.headerTitle{position:absolute;top:620px;}
+
+/** mail layer */
+.mail_layer{position:absolute;top:0;left:0;display:none;z-index:999;background:url('http://nagosoft.com/img/common/bg_mail_layer.png') repeat transparent;text-align:left;}
+.mail_layer_sub{width:500px;height:570px;position:relative;}
+.mail_layer_sub .mail_layer_sub01{width:100%;height:500px;background-color:#fff;}
+.mail_layer_sub .mail_layer_sub01 dl dt{color:#89173a;padding:34px 0 25px 32px;}
+.mail_layer_sub .mail_layer_sub01 dl dd{padding:0 0 15px 29px;}
+.mail_layer_sub .mail_layer_sub02{float:right;margin-top:20px;}
+.mail_layer #mail_send{float:right;margin-right:31px;}
+.mail_complete{position:absolute;top:0;left:0;display:none;z-index:1500;background:url('http://nagosoft.com/img/common/bg_mail_layer.png') repeat transparent;text-align:left;}
+.mail_complete_sub{width:253px;height:254px;position:relative;}
+.mail_complete_sub .mail_complete_sub01{float:right;margin-top:20px;}
+.mail_complete_sub .mail_complete_sub02{float:right;margin-top:30px;}
+
+/** board */
+/** list */
+.search_wrap{padding-bottom:15px;height:30px;border-bottom:1px solid #545454;}
+.search_wrap .left{float:left;width:400px;}
+.search_wrap .right{float:right;width:400px;text-align:right;}
+.board_list{width:900px;}
+.board_list tr:hover{background-color:#f8f8f8;}
+.board_list th{background-color:#f4f4f4;text-align:center;}
+.board_list th, .board_list td{border-bottom:1px solid #dfdfdf;/* height:43px;line-height:30px; */padding:10px 0;line-height:23px;}
+.board_list td a:hover{color:#89173a;text-decoration:underline;}
+.board_list td.content{color:#545454;background-color:#f9f9f9;padding:0;}
+.board_list td.content .file{background-color:#fcfcfc;border-bottom:1px solid #dfdfdf;height:44px;line-height:44px;padding-left:30px;}
+.board_list td.content .file .file_name{background:url('http://nagosoft.com/img/sub05/bg_file_underline01.jpg') repeat-x 0 bottom;padding-bottom:2px;}
+.board_list td.content .contents{padding:30px 40px;}
+
+.board_list td.on{color:#fff;background-color:#89173a;}
+.board_list td.on a{color:#fff;}
+.board_list td img.replay, .board_list td img.file{vertical-align:middle;}
+.board_list td img.file{margin-left:10px;}
+
+/** view */
+.board_view{border-top:1px solid #707070;}
+.board_view .title_wrap{background-color:#f9f9f9;border-bottom:1px solid #dfdfdf;display:inline-block;font-size:16px;padding:20px 30px;width:840px;}
+.board_view .title_wrap .title{line-height:25px;font-weight:bold;text-align:center;padding-bottom:15px;font-size:18px;}
+.board_view .title_wrap .other{line-height:14px;text-align:right;font-size:14px;font-weight:bold;}
+.board_view .title_wrap .other span{color:#89173a;font-size:13px;font-weight:normal;}
+.board_view .title_wrap .other span.date{font-size:13px;font-weight:normal;color:#545454;}
+.board_view .file{background-color:#fcfcfc;border-bottom:1px solid #dfdfdf;height:44px;line-height:44px;padding-left:30px;}
+.board_view .file .file_name, .board_view .article .reply_wrap .reply_file .reply_content .file_name, .board_view .article .reply_wrap .reply_content .reply_file .file_name{background:url('http://nagosoft.com/img/sub05/bg_file_underline01.jpg') repeat-x 0 bottom;padding-bottom:2px;}
+.board_view .article{padding:30px;line-height:32px;border-bottom:1px solid #dfdfdf;margin-bottom:30px;font-size:16px;}
+.board_view .article .reply_wrap{margin-top:30px;width:840px;margin:0 auto;background:url('http://nagosoft.com/img/sub05/bg_reply_bottom.jpg') no-repeat 0 bottom;padding-bottom:31px;margin-top:30px;}
+.board_view .article .reply_wrap .reply_top{background:url('http://nagosoft.com/img/sub05/bg_reply_top.jpg') no-repeat 0 0;height:31px;}
+.board_view .article .reply_wrap .reply_content{background:url('http://nagosoft.com/img/sub05/bg_replay_middle.jpg') repeat-y 0 0;min-height:100px;padding:0 30px;}
+.board_view .article .reply_wrap .reply_content .reply_info{padding-bottom:20px;margin-bottom:30px;border-bottom:1px solid #dfdfdf;font-size:14px;font-weight:bold;}
+.board_view .article .reply_wrap .reply_content .reply_info span{font-weight:normal;font-size:13px;}
+.board_view .article .reply_wrap .reply_content .reply_file{margin-top:50px;padding-top:20px;border-top:1px solid #dfdfdf;font-size:14px;}
+.board_view .btn_wrap{height:30px;}
+.board_view .btn_wrap .left{float:left;}
+.board_view .btn_wrap .left a{float:left;}
+.board_view .btn_wrap .left a img{margin-right:5px;}
+.board_view .btn_wrap .right{float:right;}
+.board_view .btn_wrap .right a{margin-left:6px;}
+
+/** form */
+.board_form_wrap{border-top:1px solid #545454;}
+.board_form{width:900px;}
+.board_form th, .board_form td{border-bottom:1px solid #dfdfdf;}
+.board_form th{background-color:#f8f8f8;font-weight:bold;height:44px;padding-left:20px;line-height:14px;}
+.board_form th img{vertical-align:middle;margin-left:5px;}
+.board_form td{padding-left:20px;}
+.board_form th.h143, .board_form td.h143{height:143px;}
+.board_form th.h350, .board_form td.h350{height:350px;}
+
+.board_form .file_name{background:url('http://nagosoft.com/img/sub05/bg_file_underline01.jpg') repeat-x 0 bottom;padding-bottom:3px;line-height:14px;margin:7px 10px 0 0;display:inline-block;}
+.board_form .file_txt{width:628px;border:1px solid #dfdfdf;height:28px;line-height:28px;padding:0 5px;float:left;}
+.board_form .btn_00{background:url('http://nagosoft.com/img/sub05/img_find_btn01.jpg') no-repeat 0 0;cursor:pointer;float:left;height:30px;line-height:30px;margin-left:10px;width:70px;display:inline;}
+.board_form .btn_00 input{width:70px;height:30px;}
+
+.board_form #captcha_img, .board_form #play_img{float:left;margin-right:10px;width:228px;height:118px;border:1px solid #dfdfdf;}
+.board_form #play_img{display:none;}
+.board_form .captcha_info_wrap{width:430px;float:left;}
+.board_form .captcha_info_wrap .captcha_info{line-height:19px;margin-bottom:10px;}
+.board_form .captcha_info_wrap .captcha_certify{margin-bottom:10px;height:30px;}
+.board_form .captcha_info_wrap .captcha_certify input, .board_form .captcha_info_wrap .captcha_certify a{float:left;}
+.board_form .captcha_info_wrap .captcha_certify a{margin-left:10px;}
+.board_form .captcha_info_wrap .captcha_btns a{float:left;margin-right:10px;}
+.board_form .captcha_info_wrap .success{color:#2297de;line-height:30px;font-weight:bold;display:none;}
+.board_form .captcha_info_wrap .fail{color:#ea4221;line-height:30px;font-weight:bold;display:none;}
+.board_form #mep_0{display:none;}
+.board_form_btns{width:320px;height:60px;margin:50px auto 0 auto;}
+.board_form_btns a, .board_form_btns input{float:left;margin-right:10px;}
+
+/** board layer */
+.layer_wrap{position:fixed;top:0;left:0;z-index:999;background:url('http://nagosoft.com/img/common/bg_mail_layer.png') repeat transparent;display:none;}
+.layer_wrap .layer_box_wrap{width:500px;height:300px;margin:0 auto;}
+.layer_wrap .layer_box_wrap .layer_box{width:440px;height:230px;padding:0 30px;background-color:#fff;}
+.layer_wrap .layer_box_wrap .layer_box .layer_title{margin:45px 0 25px 0;}
+.layer_wrap .layer_box_wrap .layer_box .layer_center{height:70px;}
+.layer_wrap .layer_box_wrap .layer_box .layer_btns{text-align:center;}
+.layer_wrap .layer_box_wrap .layer_box .layer_btns #delete_btn{float:none;}
+.layer_wrap .layer_box_wrap .layer_box #modify_btn, .layer_wrap .layer_box #delete_btn{float:right;}
+.layer_wrap .layer_box_wrap .close_btn{float:right;margin-top:20px;}
+
+/** paging */
+.paging_wrap{text-align:center;margin-top:50px;}
+.paging_wrap .paging{display:inline-block;height:29px;*zoom:1;*display:inline;}
+.paging_wrap .paging li{margin:1px 10px 0 10px;*margin:5px 10px 0 10px;font-size:16px;padding:2px 0;line-height:13px;float:left;}
+.paging_wrap .paging li.shift{height:19px;margin-top:0;}
+.paging_wrap .paging li.shift img{vertical-align:middle;}
+.paging_wrap .paging li.on{color:#89173a;border-bottom:2px solid #89173a;}
+.paging_wrap .paging li a{font-size:16px;}
+
+/** sub01*/
+.nagostory{font-size:16px;line-height:32px;width:100%;background:#fff;}
+/* width:900px; */
+.sub01_02 dl{background:url('http://nagosoft.com/img/sub01/bg_sub01_bar.jpg') repeat-y 32px 0;width:824px;height:520px;overflow-y:auto;padding-right:76px;}
+.sub01_02 dl div.mCSB_container{margin-right:0;}
+.sub01_02 dl dt{line-height:34px;font-size:30px;color:#fff;width:114px;height:42px;background:#8a193c;clear:both;}
+.sub01_02 dl dd{line-height:26px;width:710px;color:#fff;font-size:16px;margin-bottom:50px;}
+/* .partnerLi div a{cursor:default;} */
+.partnerDiv1{float:left;width:200px;height:130px;cursor:default;}
+.partnerDiv2{background:url('http://nagosoft.com/img/common/bg_archives_bottom.png') repeat 0 0;float:left;width:200px;height:31px;margin-top:-49px;text-align:left;display:none;padding-top:18px;}
+.partnerDiv2 a{cursor:pointer;}
+.partnerDiv2 a span{display:inline-block;padding-left:12px;width:146px;height:31px;float:left;}
+.partnerDiv2 a img{float:right;padding-right:22px;display:inline;}
+
+/** sub02 */
+.sub02_01{background:#f0f0f0 url('http://nagosoft.com/img/sub02/bg_sub02_01.png') no-repeat right;}
+.sub02_03{background:#f0f0f0 url('http://nagosoft.com/img/sub02/bg_sub02_03.png') no-repeat right bottom;}
+.sub02_05{background:#f0f0f0 url('http://nagosoft.com/img/sub02/bg_sub02_05.png') no-repeat right bottom;}
+.sub02_07{background:#f0f0f0 url('http://nagosoft.com/img/sub02/bg_sub02_07.png') no-repeat right 183px;}
+.sub02_text{font-size:16px;line-height:27px;}
+
+.sub02_02_dashed{margin:31px 0 34px 0;width:900px;height:1px;background:url('http://nagosoft.com/img/common/bg_bottom_dashed.png') repeat-x 0 0;}
+.sub02_02_text01{line-height:32px;font-size:14px;font-weight:bold;}
+.sub02_02_text02{line-height:32px;font-size:12px;}
+.sub02_02_text03{width:100%;line-height:26px;font-size:14px;text-align:left;background-color:#fff;text-align:justify;}
+.sub02_02_text04{line-height:44px;font-size:14px;clear:both;}
+.sub02_06_text01{line-height:44px;font-size:14px;font-weight:bold;}
+
+.sub02_02_02_box_wrap{margin-top:20px;background:url('http://nagosoft.com/img/common/bg_box_bottom01.png') no-repeat 0 bottom;padding-bottom:10px;}
+.sub02_02_02_box_wrap .sub02_02_02_box_top{width:271px;height:9px;background:url('http://nagosoft.com/img/common/bg_box_top01.png') no-repeat top left;}
+.sub02_02_02_box_wrap .sub02_02_02_box_content{background:url('http://nagosoft.com/img/common/bg_box_middle01.png') repeat-y 0 0;min-height:268px;padding-top:11px;}
+.sub02_02_02_box_wrap .sub02_02_02_box_content ul li.sub02_02_02_box_content_li01{float:left;background-color:#89173a;width:230px !important;height:33px;line-height:33px;font-size:18px;color:#fff;margin-bottom:14px;}
+.sub02_02_02_box_wrap .sub02_02_02_box_content ul li.sub02_02_02_box_content_li02{text-align:left;font-size:14px;line-height:27px;margin-bottom:24px;}
+.sub02_02_02_box_wrap .sub02_02_02_box_content ul li.sub02_02_02_box_content_li02_oneline{text-align:left;font-size:14px;margin-bottom:24px;padding-top:6px;}
+.sub02_02_02_box_wrap .sub02_02_02_box_content ul li.sub02_02_02_box_content_li02_last{text-align:left;font-size:14px;line-height:27px;}
+.sub02_02_04_box_wrap{background:url('http://nagosoft.com/img/common/bg_box_bottom02.png') no-repeat 0 bottom;padding-bottom:10px;text-align:left;}
+
+.sub02_02_04_box_wrap .sub02_02_04_box_top{width:200px;height:9px;background:url('http://nagosoft.com/img/common/bg_box_top02.png') no-repeat top left;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content{background:url('http://nagosoft.com/img/common/bg_box_middle02.png') repeat-y 0 0;min-height:462px;padding-top:11px;width:200px;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content ul{display:inline-block;width:179px;padding-left:21px;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content ul li.sub02_02_04_box_content_img{float:left;margin:57px 0 66px 26px;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content ul li.sub02_02_04_box_content_li01{float:left;background-color:#89173a;;width:158px;height:33px;line-height:33px;font-size:18px;color:#fff;margin-bottom:13px;text-align:center;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content ul li.sub02_02_04_box_content_li02{text-align:left;font-size:14px;line-height:27px;margin-bottom:18px;width:179px;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content ul li.sub02_02_04_box_content_li02_oneline{text-align:left;font-size:14px;margin-bottom:24px;padding-top:6px;width:179px;}
+.sub02_02_04_box_wrap .sub02_02_04_box_content ul li.sub02_02_04_box_content_li02_last{text-align:left;font-size:14px;line-height:27px;width:179px;}
+
+.sub02_04_01_dashed{margin:36px 0 36px 0;width:900px;height:1px;background:url('http://nagosoft.com/img/common/bg_bottom_dashed.png') repeat-x 0 0;}
+.sub02_04_03_box_wrap{margin-top:20px;background:url('http://nagosoft.com/img/common/bg_box_bottom02.png') no-repeat 0 bottom;padding-bottom:10px;}
+.sub02_04_03_box_wrap .sub02_04_03_box_top{width:200px;height:9px;background:url('http://nagosoft.com/img/common/bg_box_top02.png') no-repeat top left;}
+.sub02_04_03_box_wrap .sub02_04_03_box_content{background:url('http://nagosoft.com/img/common/bg_box_middle02.png') repeat-y 0 0;min-height:532px;padding-top:11px;width:200px;}
+.sub02_04_03_box_wrap .sub02_04_03_box_content ul{display:inline-block;width:179px;padding-left:21px;}
+.sub02_04_03_box_wrap .sub02_04_03_box_content ul li.sub02_04_03_box_content_li01{float:left;background-color:#4f277f;;width:158px;height:33px;line-height:33px;font-size:18px;color:#fff;margin-bottom:13px;text-align:center;}
+.sub02_04_03_box_wrap .sub02_04_03_box_content ul li.sub02_04_03_box_content_li02{text-align:left;font-size:14px;line-height:27px;margin-bottom:18px;width:179px;}
+.sub02_04_03_box_wrap .sub02_04_03_box_content ul li.sub02_04_03_box_content_li02_oneline{text-align:left;font-size:14px;margin-bottom:24px;padding-top:6px;width:179px;}
+.sub02_04_03_box_wrap .sub02_04_03_box_content ul li.sub02_04_03_box_content_li02_last{text-align:left;font-size:14px;line-height:27px;width:179px;}
+
+.sub02_04_04_dashed{margin:55px 0 33px 0;width:900px;height:1px;background:url('http://nagosoft.com/img/common/bg_bottom_dashed.png') repeat-x 0 0;}
+
+.sub02_06_01_dashed{margin:50px 0 34px 0;width:900px;height:1px;background:url('http://nagosoft.com/img/common/bg_bottom_dashed.png') repeat-x 0 0;}
+
+.sub02_06_02_dashed{margin:40px 0 26px 0;width:900px;height:1px;background:url('http://nagosoft.com/img/common/bg_bottom_dashed.png') repeat-x 0 0;}
+
+.sub02_06_0301_box_wrap{background:url('http://nagosoft.com/img/common/bg_box_bottom03.png') no-repeat 0 bottom;padding-bottom:10px;margin-right:44px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_top{width:584px;height:9px;background:url('http://nagosoft.com/img/common/bg_box_top03.png') no-repeat top left;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content{background:url('http://nagosoft.com/img/common/bg_box_middle03.png') repeat-y 0 0;min-height:572px;padding-top:11px;width:564px;padding-left:21px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_header0301{width:543px;height:33px;background-color:#296e3e;font-size:18px;color:#fff;line-height:33px;float:left;margin-bottom:22px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301{width:543px;height:526px;float:left;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_left{width:271px;float:left;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_left div dl{display:inline-block;text-align:left;width:255px;height:336px;font-size:14px;margin-left:16px;border-right:1px solid #dfdfdf;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_left div dl dt{color:#296e3e;font-weight:bold;margin-left:25px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_left div dl dd{text-align:left;margin-top:18px;line-height:27px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_right{width:271px;float:left;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_right div dl{display:inline-block;text-align:left;width:255px;height:336px;font-size:14px;margin-left:16px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_right div dl dt{color:#296e3e;font-weight:bold;margin-left:4px;}
+.sub02_06_0301_box_wrap .sub02_06_0301_box_content div.content_content0301 div.content_content0301_right div dl dd{text-align:left;margin-top:18px;line-height:27px;}
+
+.sub02_06_0302_box_wrap{background:url('http://nagosoft.com/img/common/bg_box_bottom01.png') no-repeat 0 bottom;padding-bottom:10px;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_top{width:271px;height:9px;background:url('http://nagosoft.com/img/common/bg_box_top01.png') no-repeat top left;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_content{background:url('http://nagosoft.com/img/common/bg_box_middle01.png') repeat-y 0 0;min-height:572px;padding-top:11px;padding-left:21px;width:249px;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_content div.content_header0302{width:228px;height:33px;background-color:#296e3e;font-size:18px;color:#fff;line-height:33px;margin-bottom:22px;float:left;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_content div.content_content0302{width:228px;height:525px;float:left;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_content div.content_content0302 div dl{display:inline-block;text-align:left;width:255px;height:336px;font-size:14px;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_content div.content_content0302 div dl dt{color:#296e3e;font-weight:bold;margin-left:53px;}
+.sub02_06_0302_box_wrap .sub02_06_0302_box_content div.content_content0302 div dl dd{text-align:left;margin-top:18px;line-height:27px;}
+
+#sub02_2{display:none;}
+#sub02_4{display:none;}
+#sub02_6{display:none;}
+#sub02_8{display:none;}
+
+/** sub03 */
+.sub03_01{background-image:url('http://nagosoft.com/img/sub03/bg_sub03_01.png');}
+.sub03_text{font-size:16px;line-height:27px;}
+#sub03_2{display:none;}
+
+/** sub04 */
+.sub04_01{background:#f0f0f0 url('http://nagosoft.com/img/sub04/bg_sub04_01.png') no-repeat right;}
+.sub04_text{font-size:16px;line-height:27px;}
+#sub04_2{display:none;}
+
+/** subEtc*/
+.subEtc01{float:right;margin:20px 0 80px 0;}
+.subEtc02{margin:80px 0 0 175px;clear:both;}
+.subEtc02 ul li{font-size:16px;margin-bottom:27px;line-height:24px;}
+.subEtc03{float:left;width:175px;display:block;font-weight:bold;margin-left:-175px;}
+
+/** subArchives*/
+.archives_main_Div{height:410px;}
+.archivesLi{border:1px solid #d4d4d4;width:268px;height:188px;}
+.archivesDiv1{float:left;width:268px;height:188px;cursor:default;}
+.archivesDiv2{background:url('http://nagosoft.com/img/common/bg_archives_bottom.png') repeat 0 0;float:left;height:59px;width:268px;margin-top:-59px;cursor:pointer;display:none;}
+.archivesDiv2 dl dt{color:#fff;font-size:16px;line-height:22px;padding-left:10px;padding-top:7px;}
+.archivesDiv2 dl dd{color:#fff;font-size:12px;line-height:22px;padding-left:10px;}
+.archivesDiv2 .fontHearder{color:#fff;font-size:12px;line-height:22px;padding:7px 10px 0 0;display:inline-block;float:right;}
+.archivesDiv2 .fontContent{margin-top:79px;display:inline-block;}
+.archivesDiv2 .fontDt{color:#fff;font-size:16px;line-height:22px;padding-left:10px;padding-top:7px;display:inline-block;}
+.archivesDiv2 .fontDd{color:#fff;font-size:12px;line-height:22px;padding-left:10px;display:inline-block;}
+
+/** subArchives page*/
+.pager_wrap_archives{text-align:center;margin-top:62px;}
+.pager_archives{display:inline-block;*display:inline;*zoom:1;margin:0 auto;overflow:hidden;}
+.pager_archives li{float:left;}
+.pager_archives .shift{margin:0 13px;font-size:16px;}
+.paging_archives li a{display:block;height:17px;text-align:center;line-height:17px;}
+.paging_archives ul.si_paging li a:hover{height:17px;font-weight:bold;color:#d15a13;}
+.paging_archives ul.si_paging li a.on{height:17px;border-bottom:2px #d15a13 solid;font-weight:bold;color:#d15a13;}
+.paging_archives ul.rd_paging li a:hover{height:17px;font-weight:bold;color:#313783;}
+.paging_archives ul.rd_paging li a.on{height:17px;border-bottom:2px #313783 solid;font-weight:bold;color:#313783;}
+.paging_archives ul.printmade_paging li a:hover{height:17px;font-weight:bold;color:#8a193c;}
+.paging_archives ul.printmade_paging li a.on{height:17px;border-bottom:2px #8a193c solid;font-weight:bold;color:#8a193c;}
+.paging_archives ul.appdynamics_paging li a:hover{height:17px;font-weight:bold;color:#4f277f;}
+.paging_archives ul.appdynamics_paging li a.on{height:17px;border-bottom:2px #4f277f solid;font-weight:bold;color:#4f277f;}
+.paging_archives ul.comvoy_paging li a:hover{height:17px;font-weight:bold;color:#296e3e;}
+.paging_archives ul.comvoy_paging li a.on{height:17px;border-bottom:2px #296e3e solid;font-weight:bold;color:#296e3e;}
+
+/** common */
+.parent_list{float:left;margin-left:15px;color:#fff;font-size:15px;margin-top:76px;position:relative;height:24px;}
+.parent_list li.parent_customer_list{width:70px;float:left;text-align:center;}
+.parent_list li.parent_customer_list a{padding-bottom:4px;color:#fff;}
+.parent_list li.parent_customer_list a.on, li.parent_customer_list a:hover{border-bottom:3px solid #fff;}
+.parent_list li.parent_customer_list ul.child_list{position:absolute;top:68px;left:-244px;width:900px;}
+.parent_list li.parent_customer_list ul.child_list li{width:180px;height:25px;margin-bottom:30px;float:left;}
+.parent_list li.parent_customer_list ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_partner_list{width:70px;float:left;text-align:center;}
+.parent_list li.parent_partner_list a{padding-bottom:4px;color:#fff;}
+.parent_list li.parent_partner_list a.on, .parent_list li.parent_partner_list a:hover{border-bottom:3px solid #fff;}
+.parent_list li.parent_partner_list ul.child_list{position:absolute;top:68px;left:-244px;width:900px;display:none;}
+.parent_list li.parent_partner_list ul.child_list li{width:200px;height:130px;margin-bottom:30px;float:left;}
+.parent_list li.parent_partner_list ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_printmade_list01{width:70px;float:left;text-align:center;}
+.parent_list li.parent_printmade_list01 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_printmade_list01 a.on{border-bottom:3px solid #8a193c;color:#8a193c;}
+.parent_list li.parent_printmade_list01 a:hover{color:#8a193c;}
+.parent_list li.parent_printmade_list01 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;}
+.parent_list li.parent_printmade_list01 ul.child_list li{float:left;}
+.parent_list li.parent_printmade_list01 ul.child_list li.positionRelative{position:relative;}
+.parent_list li.parent_printmade_list01 ul.child_list li.positionRelative .printmadeEqIcon{width:60px;height:92px;top:0;left:0;position:absolute;}
+.parent_list li.parent_printmade_list01 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+.parent_list li.parent_printmade_list01 ul.child_list li ul.grandson_list{padding-left:60px;height:150px;text-align:left;display:inline-block;*display:inline;*zoom:1;background-color:#fff;}
+.parent_list li.parent_printmade_list01 ul.child_list li ul.grandson_list li{width:100%;background-color:#fff;}
+
+.parent_list li.parent_printmade_list02{width:70px;float:left;text-align:center;}
+.parent_list li.parent_printmade_list02 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_printmade_list02 a.on{border-bottom:3px solid #8a193c;color:#8a193c;}
+.parent_list li.parent_printmade_list02 a:hover{color:#8a193c;}
+.parent_list li.parent_printmade_list02 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;}
+.parent_list li.parent_printmade_list02 ul.child_list li{float:left;width:270px;}
+.parent_list li.parent_printmade_list02 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_printmade_list03{width:70px;float:left;text-align:center;}
+.parent_list li.parent_printmade_list03 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_printmade_list03 a.on{border-bottom:3px solid #8a193c;color:#8a193c;}
+.parent_list li.parent_printmade_list03 a:hover{color:#8a193c;}
+.parent_list li.parent_printmade_list03 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;}
+.parent_list li.parent_printmade_list03 ul.child_list li{float:left;}
+.parent_list li.parent_printmade_list03 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_printmade_list04{width:70px;float:left;text-align:center;}
+.parent_list li.parent_printmade_list04 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_printmade_list04 a.on{border-bottom:3px solid #8a193c;color:#8a193c;}
+.parent_list li.parent_printmade_list04 a:hover{color:#8a193c;}
+.parent_list li.parent_printmade_list04 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;}
+.parent_list li.parent_printmade_list04 ul.child_list li{float:left;}
+.parent_list li.parent_printmade_list04 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_printmade_list05{width:70px;float:left;text-align:center;}
+.parent_list li.parent_printmade_list05 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_printmade_list05 a.on{border-bottom:3px solid #8a193c;color:#8a193c;}
+.parent_list li.parent_printmade_list05 a:hover{color:#8a193c;}
+.parent_list li.parent_printmade_list05 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;text-align:left;}
+.parent_list li.parent_printmade_list05 ul.child_list li{float:left;}
+.parent_list li.parent_printmade_list05 ul.child_list li a{padding-bottom:0;}
+
+.parent_list li.parent_appdynamic_list01{width:70px;float:left;text-align:center;}
+.parent_list li.parent_appdynamic_list01 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_appdynamic_list01 a.on{border-bottom:3px solid #4f277f;color:#4f277f;}
+.parent_list li.parent_appdynamic_list01 a:hover{color:#4f277f;}
+.parent_list li.parent_appdynamic_list01 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;}
+.parent_list li.parent_appdynamic_list01 ul.child_list li{float:left;text-align:left;font-size:14px;line-height:25px;}
+.parent_list li.parent_appdynamic_list01 ul.child_list li.parent_appdynamic_list01_commonParagraph{background-color:#fff;}
+.parent_list li.parent_appdynamic_list01 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+.parent_list li.parent_appdynamic_list01 ul.child_list li ul.grandson_list{float:left;text-align:left;width:100%;background-color:#fff;}
+.parent_list li.parent_appdynamic_list01 ul.child_list li ul.grandson_list li{width:100%;margin-bottom:18px;background-color:#fff;}
+
+.parent_list li.parent_appdynamic_list02{width:70px;float:left;text-align:center;}
+.parent_list li.parent_appdynamic_list02 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_appdynamic_list02 a.on{border-bottom:3px solid #4f277f;color:#4f277f;}
+.parent_list li.parent_appdynamic_list02 a:hover{color:#4f277f;}
+.parent_list li.parent_appdynamic_list02 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;display:none;}
+.parent_list li.parent_appdynamic_list02 ul.child_list li{width:200px;height:130px;margin-bottom:30px;float:left;color:#545454;}
+.parent_list li.parent_appdynamic_list02 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_appdynamic_list03{width:70px;float:left;text-align:center;}
+.parent_list li.parent_appdynamic_list03 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_appdynamic_list03 a.on{border-bottom:3px solid #4f277f;color:#4f277f;}
+.parent_list li.parent_appdynamic_list03 a:hover{color:#4f277f;}
+.parent_list li.parent_appdynamic_list03 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;}
+.parent_list li.parent_appdynamic_list03 ul.child_list li{float:left;}
+.parent_list li.parent_appdynamic_list03 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_appdynamic_list04{width:70px;float:left;text-align:center;}
+.parent_list li.parent_appdynamic_list04 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_appdynamic_list04 a.on{border-bottom:3px solid #4f277f;color:#4f277f;}
+.parent_list li.parent_appdynamic_list04 a:hover{color:#4f277f;}
+.parent_list li.parent_appdynamic_list04 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;text-align:left;font-size:14px;display:none;}
+.parent_list li.parent_appdynamic_list04 ul.child_list li{float:left;color:#545454;}
+.parent_list li.parent_appdynamic_list04 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+.parent_list li.parent_appdynamic_list04 ul.child_list li ul.grandson_list{float:left;text-align:left;width:100%;font-size:14px;background-color:#fff;}
+.parent_list li.parent_appdynamic_list04 ul.child_list li ul.grandson_list li{width:100%;margin-bottom:18px;line-height:26px;margin-bottom:26px;background-color:#fff;}
+
+.parent_list li.parent_appdynamic_list05{width:70px;float:left;text-align:center;}
+.parent_list li.parent_appdynamic_list05 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_appdynamic_list05 a.on{border-bottom:3px solid #4f277f;color:#4f277f;}
+.parent_list li.parent_appdynamic_list05 a:hover{color:#4f277f;}
+.parent_list li.parent_appdynamic_list05 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;text-align:left;}
+.parent_list li.parent_appdynamic_list05 ul.child_list li{float:left;}
+.parent_list li.parent_appdynamic_list05 ul.child_list li a{padding-bottom:0;}
+
+.parent_list li.parent_comvoy_list01{width:70px;float:left;text-align:center;}
+.parent_list li.parent_comvoy_list01 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_comvoy_list01 a.on{border-bottom:3px solid #296e3e;color:#296e3e;}
+.parent_list li.parent_comvoy_list01 a:hover{color:#296e3e;}
+.parent_list li.parent_comvoy_list01 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;display:none;}
+.parent_list li.parent_comvoy_list01 ul.child_list li{float:left;color:#545454;}
+.parent_list li.parent_comvoy_list01 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+.parent_list li.parent_comvoy_list01 ul.child_list li ul.grandson_list{float:left;text-align:left;width:100%;font-size:14px;background-color:#fff;}
+.parent_list li.parent_comvoy_list01 ul.child_list li ul.grandson_list li{width:100%;margin-bottom:18px;line-height:26px;margin-bottom:26px;background-color:#fff;}
+
+.parent_list li.parent_comvoy_list02{width:70px;float:left;text-align:center;}
+.parent_list li.parent_comvoy_list02 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_comvoy_list02 a.on{border-bottom:3px solid #296e3e;color:#296e3e;}
+.parent_list li.parent_comvoy_list02 a:hover{color:#296e3e;}
+.parent_list li.parent_comvoy_list02 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;display:none;}
+.parent_list li.parent_comvoy_list02 ul.child_list li{float:left;color:#545454;}
+.parent_list li.parent_comvoy_list02 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_comvoy_list03{width:70px;float:left;text-align:center;}
+.parent_list li.parent_comvoy_list03 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_comvoy_list03 a.on{border-bottom:3px solid #296e3e;color:#296e3e;}
+.parent_list li.parent_comvoy_list03 a:hover{color:#296e3e;}
+.parent_list li.parent_comvoy_list03 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;display:none;}
+.parent_list li.parent_comvoy_list03 ul.child_list li{float:left;color:#545454;}
+.parent_list li.parent_comvoy_list03 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_comvoy_list04{width:70px;float:left;text-align:center;}
+.parent_list li.parent_comvoy_list04 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_comvoy_list04 a.on{border-bottom:3px solid #296e3e;color:#296e3e;}
+.parent_list li.parent_comvoy_list04 a:hover{color:#296e3e;}
+.parent_list li.parent_comvoy_list04 ul.child_list{width:900px;position:absolute;top:68px;left:-205px;display:none;background-color:#fff;}
+.parent_list li.parent_comvoy_list04 ul.child_list li{color:#545454;text-align:left;margin-bottom:30px;width:100%;background-color:#fff;}
+.parent_list li.parent_comvoy_list04 ul.child_list li a:hover{border-bottom:0;padding-bottom:0;}
+
+.parent_list li.parent_comvoy_list05{width:70px;float:left;text-align:center;}
+.parent_list li.parent_comvoy_list05 a{padding-bottom:4px;color:#545454;}
+.parent_list li.parent_comvoy_list05 a.on{border-bottom:3px solid #296e3e;color:#296e3e;}
+.parent_list li.parent_comvoy_list05 a:hover{color:#296e3e;}
+.parent_list li.parent_comvoy_list05 ul.child_list{position:absolute;top:68px;left:-205px;width:900px;color:#545454;display:none;text-align:left;}
+.parent_list li.parent_comvoy_list05 ul.child_list li{float:left;}
+.parent_list li.parent_comvoy_list05 ul.child_list li a{padding-bottom:0;}
+
+/* #img_ul li{float:left;position:relative;top:30px;left:-251px;height:100px;} */
+
+/** nagosoft login */
+.login_wrap{width:400px;height:300px;margin:0 auto;padding:300px 0 315px 0;}
+.login_wrap .ci{width:243px;height:73px;margin:0 auto 15px auto;display:block;}
+.login_wrap .login_box{width:353px;height:120px;border:1px solid #d9d9d9;margin:0 auto;background-color:#fff;padding:40px 0 0 45px;}
+.login_wrap .login_box .left{float:left;margin-right:10px;width:218px;}
+.login_wrap .login_box .left #userId_msg, #userPw_msg, .msg{clear:both;line-height:12px;padding:5px 0;font-family:Dotum;}
+.login_wrap .login_box .login_btn{float:left;}
+.login_wrap .copyright{text-align:center;margin-top:20px;font-family:Dotum;}
+
+
+/* �댁뒪�덊꽣    list */
+
+.search_wrap{padding-bottom:15px;height:30px;border-bottom:1px solid #545454;}
+.search_wrap .left{float:left;width:400px;}
+.search_wrap .right{float:right;width:400px;text-align:right;}
+.news_board_list{width:900px;}
+.news_board_list tr:hover{background-color:#f8f8f8;}
+.news_board_list th{background-color:#f4f4f4;text-align:center;}
+.news_board_list td.img_area{border-bottom:1px solid #dfdfdf;/* height:43px;line-height:30px; */padding:10px 0;line-height:23px;}
+.news_board_list td{border-bottom:1px solid #dfdfdf;/* height:43px;line-height:30px; */padding:10px 55px 10px 30px;line-height:23px;}
+.news_board_list td a:hover{color:#89173a;text-decoration:underline;}
+.news_board_list td.content{color:#545454;background-color:#f9f9f9;padding:30px 40px;}
+.news_board_list td.on{color:#fff;background-color:#89173a;}
+.news_board_list td.on a{color:#fff;}
+.news_board_list td img.replay, .board_list td img.file{vertical-align:middle;}
+.news_board_list td img.file{margin-left:10px;}
+
+.news_board_list tr .contents{padding-left:55px;padding-right: 30px;}
+
+.news_search_wrap{padding-bottom: 20px;height:30px;border-bottom:1px solid #545454;}
+.news_search_wrap .left{float:left;}
+.news_search_wrap .right{float:right;width:400px;text-align:right;}
+.padding_15{padding: 15px 0px;}
+.news_board_list tr td.contents .titles{margin-bottom:20px;font-size:20px;line-height: 20px;white-space:nowrap;font-weight:bold;width: 587px;}
+.news_board_list tr td.contents .sub_titles{line-height: 12px;width: 587px;padding-top:5px;}
+.news_board_list tr td.contents .sub_titles .news_ellipsis_text{padding:5px 0;}
+.news_board_list tr td.contents .dates{width: 587px;padding-top:5px;}
+.emptyArticle{text-align: center;}
+
+/* �댁뒪�덊꽣    view */
+.board_view .newsContent{line-height:32px;margin-bottom:20px;font-size:16px;padding: 20px 25px;background-color:#f9f9f9;margin-top:0px;border-bottom:0px;/*border-bottom:1px solid #dfdfdf;*/width:850px;position: relative;}
+.board_view .news_title_wrap{background-color:#f9f9f9;border-bottom:1px solid #dfdfdf;display:inline-block;font-size:16px;padding:20px 30px;width:840px;}
+.board_view .news_title_wrap .title{line-height:25px;font-weight:bold;text-align:center;padding-bottom:15px;font-size:18px;display: block;}
+.board_view .news_title_wrap .other{line-height:14px;text-align:right;font-size:14px;font-weight:bold;}
+.board_view .news_title_wrap .other span{color:#89173a;font-size:13px;font-weight:normal;}
+.board_view .news_title_wrap .other span.date{font-size:13px;font-weight:normal;color:#545454;}
+
+/** �쒖쨪 text 留먯쨪�� */
+.news_ellipsis_text{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;}
+
+/* admin �댁뒪�덊꽣    list */
+.admin_news_search_wrap{padding-bottom:15px;height:30px;border-bottom:1px solid #545454;width:986px;}
+.admin_news_search_wrap .select_area{float:left;width:158px;}
+.admin_news_search_wrap .left{float:left;width:443px;}
+.admin_news_search_wrap .right{float:right;width:400px;text-align:right;}
+.admin_news_board_list{width:986px;}
+.admin_news_board_list tr:hover{background-color:#f8f8f8;}
+.admin_news_board_list th{background-color:#f4f4f4;text-align:center;height :45px; border-bottom: 1px solid #ccc;font-weight: bold;}
+.admin_news_board_list td.img_area{border-bottom:1px solid #dfdfdf;/* height:43px;line-height:30px; */padding:10px 0;line-height:23px; text-align: center;}
+.admin_news_board_list td{border-bottom:1px solid #dfdfdf;/* height:43px;line-height:30px; */padding:10px 55px 10px 30px;line-height:23px;}
+.admin_news_board_list td a:hover{color:#89173a;text-decoration:underline;}
+.admin_news_board_list td.content{color:#545454;background-color:#f9f9f9;padding:30px 40px;}
+.admin_news_board_list td.on{color:#fff;background-color:#89173a;}
+.admin_news_board_list td.on a{color:#fff;}
+.admin_news_board_list td img.replay, .board_list td img.file{vertical-align:middle;}
+.admin_news_board_list td img.file{margin-left:10px;}
+.admin_news_board_list td.num_area{margin-left:10px; text-align: center;}
+.admin_news_board_list tr .contents{padding-left:55px;padding-right: 30px;}
+div.admin_btn_area{width:986px;text-align: right;margin-top: 10px;}
+div.titles .news_ellipsis_text a{font-weight: bold;}
+
+/* loading and display none */
+div.none {display: none;}
+div.loading{position: absolute;	vertical-align: middle;	text-align: center;	left:50%;margin: -20px auto;}
+div.loading img {margin-left:-20px;}
+
+/* FILE 愿�由� */
+div.search_wrap div.width500{width: 500px;}
+div.sub_select_area{text-align: left;width:160px;float:left;}
+div.btn_area1{text-align: right;padding-top:10px;}
+body{
+-webkit-print-color-adjust:exact;
+}
+</style>
+
+<meta name="description" content="NAGOSOFT">
+<meta name="keywords" content="NAGOSOFT">
+<title>NAGOSOFT</title></head><body  ><div id="wrap">
+	<ul id="skipNavi">
+		<li>
+			<a href="#header_wrap">
+				<img  alt="상단바로가기" src="http://nagosoft.com/img/common/btn_skipToHead.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="#content">
+				<img  alt="본문바로가기" src="http://nagosoft.com/img/common/btn_skipToCont.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="#footer">
+				<img  alt="하단바로가기" src="http://nagosoft.com/img/common/btn_skipToFoot.jpg">
+			</a>
+		</li>
+	</ul>
+	<div id="container">
+		<div id="header_wrap" class="bg_header_main">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+	<div class="top">
+		<a href="/index.do"><img class="ci"  alt="NAGOSOFT" src="http://nagosoft.com/img/common/img_ci01.png"></a>
+		<ul id="gnb">
+			<li>
+				<a id="sub01" class="sub_parent" href="javascript:;">
+					<span id="sub01_on">NAGOSOFT</span>
+					<span class="hidden" id="sub01_off">나고소프트</span>
+				</a>
+				<ul class="gnb_sub">
+					<li><a href="/jsp/sub/sub01.jsp?sect=1" id="sub01_01" title="나고스토리 바로가기">
+						<span id="sub01_01_on">Nagostory</span>
+						<span class="hidden" id="sub01_01_off">나고스토리</span>
+					</a></li>
+					<li><a href="/jsp/sub/sub01.jsp?sect=2" id="sub01_02" title="연혁 바로가기">
+						<span id="sub01_02_on">History</span>
+						<span class="hidden" id="sub01_02_off">연혁</span>
+					</a></li>
+					<li><a href="/jsp/sub/sub01.jsp?sect=3" id="sub01_03" title="제휴사 바로가기">
+						<span id="sub01_03_on">Partner</span>
+						<span class="hidden" id="sub01_03_off">제휴사</span>
+					</a></li>
+				</ul>
+			</li>
+			<li>
+				<a id="sub02" class="sub_parent" href="javascript:;">
+					<span id="sub02_on">SOLUTION</span>
+					<span class="hidden" id="sub02_off">제품/솔루션</span>
+				</a>
+				<ul class="gnb_sub">
+					<li><a href="/jsp/sub/sub02.jsp?sect=1" id="sub02_01">
+						<span id="sub02_01_on">Printmade</span>
+						<span class="hidden" id="sub02_01_off">프린트메이드</span>
+					</a></li>
+					<li><a href="/jsp/sub/sub02.jsp?sect=3" id="sub02_02">
+						<span id="sub02_02_on">AppDynamics</span>
+						<span class="hidden" id="sub02_02_off">앱다이나믹스</span>
+					</a></li>
+					
+					
+					
+				</ul>
+			</li>
+			<li>
+				<a id="sub03" class="sub_parent" href="javascript:;">
+					<span id="sub03_on">SI</span>
+					<span class="hidden" id="sub03_off">SI사업</span>
+				</a>
+				<ul class="gnb_sub">
+					<li><a href="/jsp/sub/sub03.jsp?sect=1" id="sub03_01">
+						<span id="sub03_01_on">Intro</span>
+						<span class="hidden" id="sub03_01_off">소개</span>
+					</a></li>
+					<li><a href="/jsp/sub/sub03.jsp?sect=2" id="sub03_02">
+						<span id="sub03_02_on">Archives</span>
+						<span class="hidden" id="sub03_02_off">구축사례</span>
+					</a></li>
+				</ul>
+			</li>
+			<li>
+				<a id="sub04" class="sub_parent" href="javascript:;">
+					<span id="sub04_on">R&amp;D</span>	
+					<span class="hidden" id="sub04_off">연구소</span>	
+				</a>
+				<ul class="gnb_sub">
+					<li><a href="/jsp/sub/sub04.jsp?sect=1" id="sub04_01">
+						<span id="sub04_01_on">Intro</span>
+						<span class="hidden" id="sub04_01_off">소개</span>
+					</a></li>
+					<li><a href="/jsp/sub/sub04.jsp?sect=2" id="sub04_02">
+						<span id="sub04_02_on">Activities</span>
+						<span class="hidden" id="sub04_02_off">활동내역</span>
+					</a></li>
+				</ul>
+			</li>
+			<li class="last">
+				<a id="sub05" class="sub_parent" href="javascript:;">
+					<span id="sub05_on">COMMUNITY</span>
+					<span class="hidden" id="sub05_off">커뮤니티</span>
+				</a>
+				<ul class="gnb_sub">
+					<li><a href="/board/list.do?bi=1" id="sub05_01">
+						<span id="sub05_01_on">Notice</span>
+						<span class="hidden" id="sub05_01_off">알려드립니다</span>
+					</a></li>
+					<li><a href="/newsletter/list.do?bi=5" id="sub05_02">
+						<span id="sub05_02_on">Newsletter</span>
+						<span class="hidden" id="sub05_02_off">뉴스레터</span>
+					</a></li>
+					<li><a href="/board/list.do?bi=2" id="sub05_03">
+						<span id="sub05_03_on">FAQ</span>
+						<span class="hidden" id="sub05_03_off">자주묻는질문</span>
+					</a></li>
+					<li><a href="/board/list.do?bi=3" id="sub05_04">
+						<span id="sub05_04_on">Q&amp;A</span>
+						<span class="hidden" id="sub05_04_off">질문 및 답변</span>
+					</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div> 
+	
+		
+			<div class="middle">
+				<div class="left">
+					<img  alt="NAGO" src="http://nagosoft.com/img/main/img_nago.png">
+					<div class="company_full">New Application of Global Originality</div>
+					<div class="icons">
+						<a id="down_btn" href="javascript:;"><img  alt="아래로 내리기" src="http://nagosoft.com/img/main/img_down_btn01_off.png"></a>
+						<a href="javascript:;" class="mail_open"><img  alt="1:1문의" src="http://nagosoft.com/img/main/img_mail_btn02_off.png"></a>
+						<a href="/jsp/sub/subEtc.jsp?sect=1"><img  alt="지도" src="http://nagosoft.com/img/main/img_map_btn02_off.png"></a>
+						<a id="printmadeIcon" href="javascript:runPrintmade('container');"><img  alt="인쇄" src="http://nagosoft.com/img/main/img_print_btn02_off.png"></a>
+					</div>
+				</div>
+				<div class="right">
+					<div class="company_explain">
+						Nagosoft is making steady progress towards its vision of providing
+						high end effective technology solutions and IT services.<br>
+						We will create higher value for our customers.
+					</div>
+					<img  alt="SOFT" src="http://nagosoft.com/img/main/img_soft.png">
+				</div>
+			</div>
+		
+		
+		
+		
+		
+		
+		
+	
+</div>
+		</div>
+		<div id="content"><div class="point_wrap">
+	&nbsp;
+	<img class="point1"  alt="" src="http://nagosoft.com/img/main/img_bar02.jpg">
+	<img class="point2"  alt="" src="http://nagosoft.com/img/main/img_bar02.jpg">
+	<img class="point3"  alt="" src="http://nagosoft.com/img/main/img_bar02.jpg">
+	
+</div>
+<dl class="main_explain">
+	<dt><a href="/jsp/sub/sub02.jsp?sect=1">Printmade</a></dt>
+	<dd>
+		The Printmade is user-friendly software enabling users to print or store any web pages<br>
+		without any hassle by simple touch on pages.
+	</dd> 
+	<dt><a href="/jsp/sub/sub02.jsp?sect=3">AppDynamics</a></dt>
+	<dd>
+		The AppDynamics is uniquely able to deliver rich performance data, learning, and analytics, combined<br> 
+		with the flexibility to adapt to virtually any infrastructure or software environment.
+	</dd>
+	
+	
+	
+</dl>
+
+</div>
+		<div id="footer">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer_info">
+	(주) 나고소프트 서울특별시 서초구 사임당로 19길 28-3번지 1층 (서초동, 성산빌딩)
+	<a href="/jsp/sub/subEtc.jsp?sect=1"><img  alt="지도" src="http://nagosoft.com/img/common/img_map_btn01.jpg"></a>
+	<a href="javascript:;" class="mail_open"><img  alt="메일" src="http://nagosoft.com/img/common/img_mail_btn01.jpg"></a>
+	<div class="mail_layer">
+		<div class="mail_layer_sub">
+			<div class="mail_layer_sub01">
+				<dl>
+					<dt><img  alt="1:1문의" src="http://nagosoft.com/img/common/img_mail_title.png"></dt>
+					<dd><input class="input438 layerFocus" type="text" id="t" title="제목을 입력하세요"></dd>
+					<dd><input class="input213 layerFocus" type="text" id="n" title="이름을 입력하세요"></dd>
+					<dd><input class="input213 layerFocus" type="text" id="te" title="이메일 주소를 입력하세요(본인)"></dd>
+					<dd><textarea class="textarea438 layerFocus" id="c" title="문의 내용을 입력하세요"></textarea></dd>
+					<dd><a id="mail_send" href="javascript:;"><img  alt="SEND" src="http://nagosoft.com/img/common/img_send.jpg"></a></dd>
+				</dl>
+			</div>
+			<div class="mail_layer_sub02"><a class="mail_close" href="javascript:;"><img  alt="창 닫기" src="http://nagosoft.com/img/common/img_mail_close.png"></a></div>
+		</div>
+	</div>
+	<div class="mail_complete">
+		<div class="mail_complete_sub">
+			<div class="mail_complete_sub01"><img  alt="Thank you!" src="http://nagosoft.com/img/common/img_mail_complete.png"></div>
+			<div class="mail_complete_sub02"><a class="mail_close" href="javascript:;"><img  alt="창 닫기" src="http://nagosoft.com/img/common/img_mail_close.png"></a></div>
+		</div>
+	</div>
+</div>
+<p class="footer_info">Tel : 02-3472-1515 |  Fax : 02-3472-1616</p>
+<p class="footer_info">All Contents Copyright NAGOSOFT Inc, All Rights Reserved.</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image"  alt="" src="http://nagosoft.com/index.do" ptm_object_target="true" id="ptm_object_img_1_0"><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

@@ -1,0 +1,124 @@
+﻿<meta charset="utf-8" /> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link href="#"></link>
+<script src='jspdf.js'></script>
+<script src='jquery.js'></script>
+<script>
+
+	function connectServer(urlstring){
+		alert("AJAX로 페이지를 불러옵니다. 정상적으로 페이지를 로드가 안됬을 경우, F5를 눌러서 다시 접속해주십시오.");
+		dmj.ajax({
+			url:urlstring
+			, success: function(result){
+				dmj("#wrapper").html(result);
+			}})
+	}
+
+
+</script>
+<body>
+<div id='printbutton' class="navbar navbar-static-top bs-docs-nav" role="banner" style="background-color:#e9e9e9">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">Printmade Text Version</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#" onclick='printMe();'>Print</a>
+        </li>
+        <li>
+          <a href="#" onclick='connectServer("1.html");'>IBK</a>
+        </li>
+        <li>
+          <a href="#" onclick='connectServer("2.html");'>Nago</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://192.168.1.39/ptmexe">Bridge</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div id='wrapper'>
+	<div>
+	<div class='wrap' style='width: 900px;'>
+		<div>　　　　　　　　　　　　　　　　 _,,..､､､､､､､..,,_</div>
+		<div></div>
+		<div>　　　　　　　　　　 　 　 ,.-''´　　　　　　　　　`ヽ､</div>
+		<div></div>
+		<div>　　　　　　　　　　　 ／　　　　　　　　　　　　　　　`ヽ､</div>
+		<div></div>
+		<div>　　 　 　 　 　 　 ／　　　　　　　　　　　　　　　　　　　 ヽ</div>
+		<div></div>
+		<div>　　　　　　　　 , '　　　　　　　　　　　　..　　　　　　　　 　 ',</div>
+		<div></div>
+		<div>　　　　　　　 /　　　　　　　　　　　　　　　　　　 　 　 　 　 i</div>
+		<div></div>
+		<div>　 　 　 　 　 ｉ　　　　　　　ﾉ　　　　　　　　　　　 　 　 　 　 l</div>
+		<div></div>
+		<div>　　　　　　　i　　　　　　　/　　　　　　　　　　　　　 　 　 　 l</div>
+		<div></div>
+		<div>　　　　　 　 !　　　　　　 ヽ　　　　　　　　　　　　　　　　　　l</div>
+		<div></div>
+		<div>　　　　　　 l　　　　　　　　ヽ　　　　　　 _,,‐"-''　　　　　　　|</div>
+		<div></div>
+		<div>　　　 　 　 l　　　　　　　　　　　　＿,,,-''／,,-''"　　　　　 　 |</div>
+		<div></div>
+		<div>　　　　　　|　　　　　　　、 ￣￣_,,,-‐ﾆ-‐''"　　　 　 　 　 　 |</div>
+		<div></div>
+		<div>　　　　 　 |　　　　　　　　ー_二 -‐　　　　　　　　　　　　　　|</div>
+		<div></div>
+		<div>　 　 　 　 ,L　　　　　　 ￣ ､＿　　　　　　　　　　　　　　　　!､</div>
+		<div></div>
+		<div>　　　　　 _〉　　　　　　　　　　　-ニニニニ--＿_　　　　　　 く</div>
+		<div></div>
+		<div>　　 　 　 |｀ヽ-､、　　　　　　 ￣￣二-─'''￣　　　　　　　_,､r'､</div>
+		<div></div>
+		<div>　　　　　 | ﾄ ',　｀!ヽ､,,_　　　─────‐'''＿＿__,,,..､イ´/ｨ! i</div>
+		<div></div>
+		<div>　　　　　 l い ! liﾞ _,, -─-`､ー─ '' '' '' ""´_. -─- ､_　! //ﾉ !</div>
+		<div></div>
+		<div>　　　　 　 ',｀i｀! | `v''´￣｀`ヽ､ヽ､　 　 ,r ',,´‐''´｀`ヽ､/ | i K ,'</div>
+		<div></div>
+		<div>　　　　　　 い''､!　､ﾆ二､,二ﾆ､`′_　r'ｰ´∠ﾆ､,ニ=,　 l i ,l! l</div>
+		<div></div>
+		<div>　　　　　　　', ! l!　 冫r─r‐く´〃　L|　ゝ ｀>ｰr‐rヾ 　 !f ﾉ/</div>
+		<div></div>
+		<div>　　　　 　 　 l l l!　 　 　 　 　 　 　 |_|　　　　　　　　　 |l!//</div>
+		<div></div>
+		<div>　　　　　　　 | ! l　　　　 　 　 　 　 | |　　　 　 　 　 　 l　 i</div>
+		<div></div>
+		<div>　　　　　　　 |　 l! 　 　 　 　 　 　 ├|　　　　　　　　　l!　l</div>
+		<div></div>
+		<div>　　　　　　　 |　 |',　　__　　　　　　 |-|　_　 　 　 　 　 ,!　l</div>
+		<div></div>
+		<div>　　　　　　　 |　 | ヽ ＇､　　　　 ｀ヾ_/´　　　　 ,, 　 ,.'l　 !</div>
+		<div></div>
+		<div>　　　　　　　 |　 |　 ヽ　 `ヾﾆ　─----─　ﾆ''"　 , '　!　|</div>
+		<div></div>
+		<div>　　　　　　　 |　 |　　 ヽ　　`''　￣二二￣　''"　, '　　|　l</div>
+		<div></div>
+		<div>　　　　　　　 |　 | 　 　 ヽ　　　　　　　　 　 　 , ′ 　 !　!</div>
+		<div></div>
+		<div>　　　　　　 |　 |　　　　 ＼　　　　　　　　　,/　　　 i　 !</div>
+		<div></div>
+		<div>　　　　　　　 |　 |　 　 　 　 ｀ｰ-------─'′　　　 |　 !</div>
+		<div>　　　　　　　　　　　　　　　　 _,,..､､､､､､､..,,_</div>
+		<div></div>
+	</div>
+	</div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
